@@ -17,7 +17,7 @@ A Python client for interacting with the **NECMEC API python wrapper**. This API
 To install the package, you can use `pip`:
 
 ```bash
-pip install .
+pip install necmec-api
 ```
 
 ### help
@@ -43,5 +43,32 @@ python3 -m necmec_api.cli --config config.json --username your_username --passwo
 
 ### Refer demo.py
 ```
+python3 -m venv env
+source env/bin/activate
+pip install necmec-api
+cat <<EOF > config.json
+{
+    "production": {
+      "base_url": "https://report.cybertip.org/ispws",
+      "status_url": "/status",
+      "xsd_url": "/xsd",
+      "submit_url": "/submit",
+      "upload_url": "/upload",
+      "fileinfo_url": "/fileinfo",
+      "finish_url": "/finish",
+      "retract_url": "/retract"
+    },
+    "test": {
+      "base_url": "https://exttest.cybertip.org/ispws",
+      "status_url": "/status",
+      "xsd_url": "/xsd",
+      "submit_url": "/submit",
+      "upload_url": "/upload",
+      "fileinfo_url": "/fileinfo",
+      "finish_url": "/finish",
+      "retract_url": "/retract"
+    }
+  }
+EOF
 python3 demo.py
 ```
