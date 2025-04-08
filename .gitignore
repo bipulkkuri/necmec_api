@@ -1,0 +1,9 @@
+.pytest_cache
+env
+build
+*.egg-info
+*.log
+**.__pycache__
+__pycache__/
+dist
+.DS_Store
