@@ -1,3 +1,3 @@
 pip install twine
-twine upload dist/*
+twine upload dist/* --verbose
 

@@ -1,16 +1,20 @@
+import pathlib
 from setuptools import setup, find_packages
 
-with open('README.md', 'r') as f:
-    long_description = f.read()
+HERE = pathlib.Path(__file__).parent
+README = (HERE / "README.md").read_text()
 
 setup(
     name="necmec_api",
-    version="0.1.1",
+    version="0.1.2",
     author="Bipul Kumar Kuri",
     description="Python client for interacting with the necmec API",  # Short description
-    long_description=long_description,
+	long_description = README,
+	long_description_content_type = "text/markdown",
     url="https://github.com/bipulkkuri/necmec_api",
     packages=find_packages(),
+    include_package_data=True,
+    license="MIT",  # License type
     # Keywords:
     TAGS = [
     "utilities",
