@@ -1,6 +1,6 @@
 # NECMEC API python wrapper Client
 
-A Python client for interacting with the **NECMEC API python wrapper**. This API allows users to submit reports, upload files, and perform other operations necessary to complete the submission process.
+A Python client for interacting with the **NECMEC API python wrapper**. This API allows users to submit reports, upload files, and perform other operations necessary to complete the submission process. Base API docs https://exttest.cybertip.org/ispws/documentation/index.html#overview
 
 ## Features
 

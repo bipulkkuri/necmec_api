@@ -1,10 +1,14 @@
 from setuptools import setup, find_packages
 
+with open('README.md', 'r') as f:
+    long_description = f.read()
+
 setup(
     name="necmec_api",
-    version="0.1.0",
+    version="0.1.1",
     author="Bipul Kumar Kuri",
     description="Python client for interacting with the necmec API",  # Short description
+    long_description=long_description,
     url="https://github.com/bipulkkuri/necmec_api",
     packages=find_packages(),
     # Keywords:
